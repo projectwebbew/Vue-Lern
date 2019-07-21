@@ -6,3 +6,4 @@ new Vue({
   render: h => h(App)
 });
 
+export const eventEmiter=new Vue();
