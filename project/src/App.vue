@@ -3,7 +3,7 @@
  <div>
   <h2>Parent: {{carName}}</h2>
 
-  <app-counter v-bind:counterfromapp="counters"></app-counter>
+  <app-counter ></app-counter>
 
 
   <app-car
@@ -14,7 +14,6 @@
           v-bind:changeFunc="changeCarNameAudi"
 
 
-          v-bind:counter="counters"
           v-on:counterUpdated="counters = $event"
 
 
@@ -33,7 +32,6 @@
    return {
     carName: 'Ford from parent',
     autoyear:2020,
-    counters:0
    }
   },
 methods:{
